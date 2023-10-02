@@ -1,0 +1,40 @@
+eme):
+    """Greets a person by name."""
+    print(f"Hello, {name}!")
+
+# Calling the function
+greet("Alice")
+
+2. def greet(name="User"):
+    """Greets a person by name, defaulting to 'User' if no name is provided."""
+    print(f"Hello, {name}!")
+
+# Calling the function with and without an argument
+greet()  # Outputs: Hello, User!
+greet("Bob")  # Outputs: Hello, Bob!
+
+3. def add(a, b):
+    """Adds two numbers and returns the result."""
+    return a + b
+
+# Calling the function
+result = add(3, 5)
+print(result)  # Outputs: 8
+
+4. def factorial(n):
+    """Calculates the factorial of a number using recursion."""
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+
+# Calling the function
+result = factorial(5)
+print(result)  # Outputs: 120
+
+5. multiply = lambda x, y: x * y
+
+# Using the lambda function
+result = multiply(4, 6)
+print(result)  # Outputs: 24
+
