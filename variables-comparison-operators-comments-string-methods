@@ -1,0 +1,228 @@
+
+n variables
+
+1. What is the output of the following python code?
+y = 5
+y = "Jack"
+print(y)
+solution
+Jack
+
+2. Which of the following variable names are valid?
+name = "Lydia"
+
+3. Which of the following is correct regarding variables in Python?
+a. Data type of variable names should not be declared.
+b. variable names in Python cannot start with a number. However, it can contain the number in any position.
+c. variables name can start with an underscore.
+
+4. Which of the following are valid Python variable names?
+solution 
+a. class
+b. Age
+c. 1st_student
+d. _st
+
+Ans = B
+
+5. Which of the following is a valid variable name in Python?
+a. do it
+b. All of the above
+c. none of the above
+d. 1do
+e. do+1
+solution 
+C
+
+6. Which of the following statements assigns the value 50 to the variable x in Python
+a. x=50
+b. x>>50
+c. x:50
+d. x == 50
+solution
+Ans = a
+
+7. Which of the following is a keyword in Python?
+a. int
+b. finally
+c. return
+d. All of the above
+e. float
+solution 
+all of the above
+
+8. What would get printed to the console?
+solution
+age = 22
+AGE = 44
+
+age /= 2
+
+print(age + AGE)
+Ans = 55
+
+9. True is what type of variable?
+Ans = boolean
+
+10. In Python, a variable must be declared before it is assigned a value:
+a. True
+b. False
+Hint: Variables need not be declared or defined in advance in Python. To create
+ a variable, you just assign it a value. 
+
+11. What is the output of the following python code?
+amount = 4
+cost = 2
+cost += 2
+print(amount * cost)
+a. 8
+b. 12
+c. 16
+d. 10.
+solution
+
+COMMENTS
+1. Comments can be used to ….
+Ans= make the code more readable.
+
+2. What is the output of the following python code?
+#print("Hello, jack!")
+print("Hello, Sally!")
+Ans= Hello, Sally
+
+3. What is the output of the following python code?
+print("line1")
+#print("line2")
+print("#line3")
+Ans= line1
+     #line3
+
+4. What is the output of the following python code?
+#x = 5
+#y = 6
+z = 7
+print(x+y+z)
+Ans= NameError
+
+5. A comment in Python starts with the hash character(#) and extends
+ to the end of the physical line.
+True
+
+6. Which character is used in Python to make a single line comment?
+Ans= #
+
+7. You can use Python comments inline, on independent lines, or on multiple 
+lines to include larger documentation.
+Ans=True
+
+8. What is the output of the following python code?
+name = "Sally"# employee name
+ 
+data = "#123" 
+print (name+data)
+Ans=Sally#123
+
+INPUTS
+1. What is the output of the following python code if we enter 25 as input?
+age =input("My age is: " )
+print (age)
+Ans=25
+
+2. What will be printed when the following executes?
+print(int(15.5)-10)
+Ans=5
+
+3. What is the input function?
+Ans= A function that allows us to ask the user to enter some data.
+
+4. The input() method returns string value. So, if we want to perform arithmetic
+ operations, we need to cast the value first.
+Ans=True
+
+5. What is the output of the following python code if we enter “Hello Python” as input?
+inputString = input('Enter a string: ')
+print(inputString, sep='#', end='&')
+Ans Hello Python&
+
+6. In Python3, Whatever you enter as input, the input() function converts it into a string.
+True
+
+STRING METHODS
+1. All string methods return new values and the original string values will be changed with the new values.
+all string methods return new values. the do not change the original string.
+
+2. Which method should you use in order to convert the input into a string correctly:
+year_of_birth = int(input("In what year were you born? "))
+
+print("You were born in " + ...(year_of_birth))
+Ans= String
+
+3. What will be printed when the following executes?
+print("ha"*2)
+Ans=haha
+
+4. What is the output of the following python code?
+x = 5
+y = "Sally"
+print(str(x) + y)
+Ans=5Sally
+
+5. Which operator you can use to perform string concatenation?
++
+
+6. What is the output of the following python code if we enter “HelloPython” as input?
+ inputString = input('Enter a string: ')
+print(inputString*2)
+Ans = HelloPythonHelloPython
+
+7. What is the output of the following python code if we enter 5 as input?
+Num = input("Enter a Number: ") 
+print (Num * 3 )
+Ans= 555
+
+8. What is the output of the following python code if we enter 5 as input?
+Num = input("Enter a Number: ")
+Num = int(Num) 
+print ( Num * 3 )
+Ans= 15
+
+
+COMPARISON OPERATORS
+1. What would get printed?
+min_score = 13
+score = 13
+
+print(score > min_score)
+print(score <= min_score)
+Ans= False
+     True
+2. What is the output when the following executes?
+print(2 < 4)
+True
+
+3. What is the output of the following code?
+y = 20
+x = y += 3
+print(x)
+Ans =  SyntaxError
+
+4. What is the output when the following executes?
+'python'>'Python'
+Ans=True
+
+5. What is the output of the following python code?
+x = 6
+y = 7
+print(x != y)
+Ans=True
+
+
+
+
+
+
+
+
+
+
+
