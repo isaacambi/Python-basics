@@ -1,0 +1,453 @@
+LE LOOP
+1. What keyword would you use to add an alternative condition to an if statement?
+solution
+elif
+
+2. What does the following Python program display?
+x = 1
+while ( x < 20 ):
+ x = x * 2
+print(x)
+solution
+x = 1: Initializes a variable x with the value 1.
+
+while (x < 20):: This is a while loop. It checks if the value of x is less than 20. 
+As x is initially 1, this condition is true, so the code inside the loop will execute.
+
+Inside the loop, there is a single statement:
+
+makefile
+
+    x = x * 2
+
+    This statement multiplies the current value of x by 2 and 
+assigns the result back to x. In the first iteration of the loop, x 
+is doubled from 1 to 2.
+
+    After executing the statement inside the loop, the program goes
+ back to the while condition and checks it again. As long as x is less
+ than 20, the loop will continue to execute.
+
+    In the second iteration of the loop, x is now 2, and the 
+statement x = x * 2 multiplies it by 2 again, making x equal to 4.
+
+    The loop continues to iterate, doubling the value of x in each iteration. 
+Here's how x changes in each iteration:
+        Iteration 1: x is 2.
+        Iteration 2: x is 4.
+        Iteration 3: x is 8.
+        Iteration 4: x is 16.
+
+    In the fifth iteration, x is 16, and when we execute x = x * 2, 
+it becomes 32. At this point, x is no longer less than 20, so the while 
+loop condition (x < 20) becomes false.
+
+    The loop terminates because the condition is false, and the program
+ proceeds to the next statement after the loop.
+
+    Finally, print(x) is executed, which prints the value of x. In this
+ case, x is 32, so it will print "32" to the console.
+
+So, the code essentially doubles the value of x in each iteration of the
+ loop until x becomes greater than or equal to 20, and the final value of x is 32.
+
+3. What is the output when this code executes?
+x = 1
+while ( x <= 5 ):
+  x += 1
+print(x)
+
+x = 1: Initializes a variable x with the value 1.
+
+while (x <= 5):: This is a while loop. It checks if the value of x is
+ less than or equal to 5. Since x is initially 1,
+ which is less than 5, this condition is true, so the code inside the 
+loop will execute.
+
+Inside the loop, there is a single statement:
+
+makefile
+
+x += 1
+
+This statement is shorthand for incrementing x by 1. In other words, 
+it adds 1 to the current value of x. 
+So, in the first iteration of the loop, x is incremented from 1 to 2.
+
+After executing the statement inside the loop, the program goes back to
+ the while condition and checks it again. As long as x is less than or 
+equal to 5, the loop will continue to execute.
+
+In the second iteration of the loop, x is now 2, and x += 1 increments it to 3.
+
+The loop continues to iterate, incrementing x by 1 in each iteration:
+
+    Iteration 1: x is 2.
+    Iteration 2: x is 3.
+    Iteration 3: x is 4.
+    Iteration 4: x is 5.
+    Iteration 5: x is 6.
+
+In the sixth iteration, x is 6, and when we execute the statement x += 1, 
+it becomes 7. At this point, x is no longer less than or equal to 5, so the
+ while loop condition (x <= 5) becomes false.
+
+The loop terminates because the condition is false, and the program proceeds
+ to the next statement after the loop.
+
+Finally, print(x) is executed, which prints the value of x. In this case, x is 7,
+ so it will print "7" to the console.
+
+So, the code increments the value of x by 1 in each iteration of the loop until
+ x becomes greater than 5, and the final value of x is 7.
+
+4. What will be the output of the following Python code?
+i = 2
+while True:
+    if i%3 == 0:
+        break
+    print(i)
+    i += 2
+solution
+i = 2: Initializes a variable i with the value 2.
+
+while True:: This is an infinite while loop. The loop will continue to execute as 
+long as the condition True remains true. Since True is always true, this loop will 
+continue indefinitely until it is explicitly terminated with a break statement.
+
+Inside the loop, there is an if statement:
+
+kotlin
+
+if i % 3 == 0:
+    break
+
+a. i % 3 == 0: This condition checks if the remainder of dividing the current value 
+of i by 3 is equal to 0. In other words, it checks if i is divisible by 3 without a remainder.
+
+b. break: If the condition is true (i.e., i is divisible by 3 without a remainder), 
+the break statement is executed. The break statement immediately terminates the loop and exits it.
+
+If the condition i % 3 == 0 is false, meaning i is not divisible by 3 without a remainder, 
+the code inside the if block is skipped, and the following lines are executed:
+
+css
+
+    print(i)
+    i += 2
+
+    a. print(i): This line prints the current value of i. 
+In the first iteration, i is 2, so it prints "2" to the console.
+
+    b. i += 2: This line increments the value of i by 2.
+ After the increment, i becomes 4 in the first iteration.
+
+    After executing the lines inside the loop, the program goes 
+back to the beginning of the loop (while True:) and checks the condition again. 
+This process continues indefinitely.
+
+    In each iteration, the value of i is incremented by 2 and printed, 
+but the loop will terminate when i becomes divisible by 3 without a remainder.
+
+Here's how the code behaves in each iteration:
+
+    Iteration 1: i is 2 (not divisible by 3 without remainder), prints "2," increments to 4.
+    Iteration 2: i is 4 (not divisible by 3 without remainder), prints "4," increments to 6.
+    Termination: In the third iteration, i is 6, which is divisible by 3 without a remainder. 
+Therefore, the break statement is executed, and the loop terminates.
+
+So, the code prints "2" and "4" to the console and stops when i becomes divisible by 3 
+(in this case, when i reaches 6).
+
+5. What is the value of x …
+x = 0
+while (x < 50):
+  x+=2
+
+print(x)
+ solution
+x = 0: Initializes a variable x with the value 0.
+
+while (x < 50):: This is a while loop. It checks if the value of x is less than 50. 
+As x is initially 0, which is less than 50, this condition is true, so the code inside the loop will execute.
+
+Inside the loop, there is a single statement:
+
+makefile
+
+    x += 2
+
+    This statement is shorthand for incrementing x by 2. In other words, 
+it adds 2 to the current value of x. So, in each iteration of the loop, 
+x is incremented by 2.
+
+    After executing the x += 2 statement inside the loop, the program goes
+ back to the while condition and checks it again. As long as x remains less 
+than 50, the loop will continue to execute.
+
+    The loop continues to iterate, incrementing x by 2 in each iteration.
+ Here's how x changes in each iteration:
+        Iteration 1: x is incremented from 0 to 2.
+        Iteration 2: x is incremented from 2 to 4.
+        Iteration 3: x is incremented from 4 to 6.
+        ...
+
+    This process continues until x becomes equal to or greater than 50.
+
+    When x reaches a value of 50 or greater, the while loop condition x < 50 becomes false.
+
+    The loop terminates because the condition is false, and the program 
+proceeds to the next statement after the loop.
+
+    Finally, print(x) is executed, which prints the value of x. In this case,
+ x will be the last value it had before the loop terminated, which is the first 
+value greater than or equal to 50. So, it will print that value.
+
+The loop essentially increments x by 2 in each iteration until x becomes 50 or
+ greater, and then it prints the final value of x.
+Ans = 50
+
+6. What will be the output of the following Python code?
+i = 1
+while True:
+    if i % 0o7 == 0:
+        break
+    print(i)
+    i += 1
+his code uses a while loop to increment a variable i and print its value in each iteration
+ until i becomes divisible by 7 (in base 8, also known as octal representation). Here's a
+ step-by-step explanation of the code:
+
+    i = 1: Initializes a variable i with the value 1.
+
+    while True:: This is an infinite while loop because the condition True is always true,
+ meaning the loop will continue executing indefinitely until it is explicitly terminated with a break statement.
+
+    Inside the loop, there is an if statement:
+
+    kotlin
+
+if i % 0o7 == 0:
+    break
+
+a. i % 0o7: This calculates the remainder when i is divided by 7 in base 8 (octal). 
+In octal representation, 0o7 is equivalent to decimal 7. So, i % 7 checks if i is divisible
+ by 7 without a remainder.
+
+b. break: If the condition is true (i.e., if i is divisible by 7 without a remainder), the 
+break statement is executed. This immediately terminates the loop and exits it.
+
+If the condition i % 0o7 == 0 is false, meaning i is not divisible by 7 without a remainder, 
+the code inside the if block is skipped, and the following lines are executed:
+
+css
+
+    print(i)
+    i += 1
+
+    a. print(i): This line prints the current value of i. In the first 
+iteration, i is 1, so it prints "1" to the console.
+
+    b. i += 1: This line increments the value of i by 1, so in each iteration, 
+i is increased by 1.
+
+    After executing the lines inside the loop, the program goes back to the 
+beginning of the loop (while True:) and checks
+ the condition again. This process continues indefinitely.
+
+    In each iteration, the value of i is incremented by 1 and printed, but the
+ loop will terminate when i becomes divisible by 7 (in base 8).
+
+Here's how the code behaves in each iteration:
+
+    Iteration 1: i is 1 (not divisible by 7 in base 8), prints "1," increments to 2.
+    Iteration 2: i is 2 (not divisible by 7 in base 8), prints "2," increments to 3.
+    Iteration 3: i is 3 (not divisible by 7 in base 8), prints "3," increments to 4.
+    Iteration 4: i is 4 (not divisible by 7 in base 8), prints "4," increments to 5.
+    Iteration 5: i is 5 (not divisible by 7 in base 8), prints "5," increments to 6.
+    Iteration 6: i is 6 (not divisible by 7 in base 8), prints "6," increments to 7.
+
+    In the seventh iteration, i is 7 (divisible by 7 in base 8), so the 
+condition i % 0o7 == 0 becomes true, and the break statement is executed.
+
+    The loop terminates because the condition is true, and the program proceeds
+ to the next statement after the loop.
+
+So, the code prints "1" through "6" to the console and stops when i becomes 
+divisible by 7 in base 8 (in this case, when i reaches 7).
+
+7. What will be the output of the following Python code?
+i = 5
+while True:
+    if i % 0o11 == 0:
+        break
+    print(i)
+    i += 1
+
+8. i = 5: Initializes a variable i with the value 5.
+
+while True:: This is an infinite while loop because the condition True is always true, 
+meaning the loop will continue executing indefinitely until it is explicitly terminated with a break statement.
+
+Inside the loop, there is an if statement:
+
+kotlin
+
+if i % 0o11 == 0:
+    break
+
+a. i % 0o11: This calculates the remainder when i is divided by 11 in base 8 (octal). 
+In octal representation, 0o11 is equivalent to decimal 9. So, i % 9 checks if i is divisible
+ by 9 without a remainder.
+
+b. break: If the condition is true (i.e., if i is divisible by 9 without a remainder), the break
+ statement is executed. This immediately terminates the loop and exits it.
+
+If the condition i % 0o11 == 0 is false, meaning i is not divisible by 11 without a remainder, 
+the code inside the if block is skipped, and the following lines are executed:
+
+css
+
+    print(i)
+    i += 1
+
+    a. print(i): This line prints the current value of i. In the first iteration, i is 5,
+ so it prints "5" to the console.
+
+    b. i += 1: This line increments the value of i by 1, so in each iteration, i is increased by 1.
+
+    After executing the lines inside the loop, the program goes back to the beginning of the loop
+ (while True:) and checks the condition again. This process continues indefinitely.
+
+    In each iteration, the value of i is incremented by 1 and printed, but the loop will terminate
+ when i becomes divisible by 11 (in base 8).
+
+Here's how the code behaves in each iteration:
+
+    Iteration 1: i is 5 (not divisible by 11 in base 8), prints "5," increments to 6.
+    Iteration 2: i is 6 (not divisible by 11 in base 8), prints "6," increments to 7.
+    Iteration 3: i is 7 (not divisible by 11 in base 8), prints "7," increments to 8.
+    Iteration 4: i is 8 (not divisible by 11 in base 8), prints "8," increments to 9.
+
+    In the fifth iteration, i is 9 (divisible by 11 in base 8), so the condition i % 0o11 == 0 
+becomes true, and the break statement is executed.
+
+    The loop terminates because the condition is true, and the program proceeds to the next statement 
+after the loop.
+
+So, the code prints "5" through "8" to the console and stops when i becomes divisible by 11 in base 8
+ (in this case, when i reaches 9).
+
+9. What does the following code produce as output?
+i = 1
+x = 3
+sum = 0
+while ( i <= x ):
+ sum += i
+ i += 1
+print(sum)
+
+solution
+certainly! Let's break down this code step by step and explain what each part does:
+
+    i = 1: Initializes a variable i with the value 1.
+
+    x = 3: Initializes a variable x with the value 3.
+
+    sum = 0: Initializes a variable sum with the value 0. 
+This variable will be used to accumulate the sum of numbers.
+
+    while (i <= x):: This is a while loop. It checks if the 
+value of i is less than or equal to the value of x. In this case,
+ i is initially 1, and x is 3, so the condition is true, and the code 
+inside the loop will execute.
+
+    Inside the loop, there are two statements:
+
+    a. sum += i: This statement adds the current value of i to the sum
+ variable. It accumulates the sum of numbers as the loop iterates. In the 
+first iteration, i is 1, so sum becomes 0 + 1, which is 1.
+
+    b. i += 1: This statement increments the value of i by 1 in each 
+iteration, so i is increased by 1. After the first iteration, i becomes 2.
+
+    The loop continues to iterate as long as the condition i <= x is true. 
+In this case, it will iterate three times because i starts at 1, and x is 3.
+
+    In the second iteration, i is 2, and sum += i adds 2 to the current sum, 
+making sum equal to 3.
+
+    In the third and final iteration, i is 3, and sum += i adds 3 to the
+ current sum, making sum equal to 6.
+
+    After the third iteration, the condition i <= x is no longer true because 
+i is now 4, which is not less than or equal to 3. Therefore, the loop terminates.
+
+    Finally, print(sum) is executed, which prints the value of the sum variable.
+ In this case, sum is 6, so it will print "6" to the console.
+
+So, the code calculates the sum of numbers from 1 to 3 and prints the result, 
+which is 6, to the console
+
+10. i = 1
+while True:
+    if i%3 == 0:
+        break
+    print(i)
+    i += 1
+solution
+i = 1: Initializes a variable i with the value 1.
+
+while True:: This is an infinite while loop because the condition True is always true. 
+This means that the loop will continue executing indefinitely until it is explicitly
+ terminated with a break statement.
+
+Inside the loop, there is an if statement:
+
+kotlin
+
+if i % 3 == 0:
+    break
+
+a. i % 3 == 0: This condition checks if the remainder of dividing the current value 
+of i by 3 is equal to 0. In other words, it checks if i is divisible by 3 without a remainder.
+
+b. break: If the condition is true (i.e., if i is divisible by 3 without a remainder),
+ the break statement is executed. This immediately terminates the loop and exits it.
+
+If the condition i % 3 == 0 is false, meaning i is not divisible by 3 without a remainder,
+ the code inside the if block is skipped, and the following lines are executed:
+
+css
+
+    print(i)
+    i += 1
+
+    a. print(i): This line prints the current value of i. In the first 
+iteration, i is 1, so it prints "1" to the console.
+
+    b. i += 1: This line increments the value of i by 1. In each iteration, 
+i is increased by 1.
+
+    After executing the lines inside the loop, the program goes back to the 
+beginning of the loop (while True:) and checks the 
+condition again. This process continues indefinitely.
+
+    In each iteration, the value of i is incremented by 1 and printed, but
+ the loop will terminate when i becomes divisible by 3 without a remainder.
+
+Here's how the code behaves in each iteration:
+
+    Iteration 1: i is 1 (not divisible by 3 without remainder), prints "1," 
+increments to 2.
+    Iteration 2: i is 2 (not divisible by 3 without remainder), prints "2,"
+ increments to 3.
+
+    In the third iteration, i is 3, and when we execute i % 3 == 0, it becomes
+ true because 3 is divisible by 3 without a remainder.
+
+    The break statement is executed, which immediately terminates the loop and 
+exits it.
+
+So, the code prints "1" and "2" to the console and stops when i becomes divisible
+ by 3 without a remainder (in this case, when i reaches 3).
