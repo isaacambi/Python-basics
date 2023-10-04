@@ -1,0 +1,146 @@
+ONDITIONAL FLOW
+1. Given the nested if-else below, what will be the value x when the code executed successfully.
+x = 0
+a = 6
+b = 6
+if a > 0:
+    if b < 0: 
+        x = x + 6 
+    elif a > 6:
+        x = x + 5
+    else:
+        x = x + 4
+else:
+    x = x + 3
+
+print(x)
+
+x = 4
+
+2. What is the output of the following python code?
+a = 5
+b = 10
+if b > a:
+print("b is greater than a")
+Ans = Indentation Error
+
+3. What is the output of the following python code?
+x = -10
+if x < 0:
+    print("The negative number ",  x, " is not valid here.")
+print("This is always printed")
+Ans= The negative number -10 is not valid here
+This is always printed
+
+4. What keyword would you use to add an alternative condition to an if statement?
+Ans= elif
+
+5. Which one of the following if statements will not execute successfully ?
+# 1st if statement
+if True: print('hello')
+# 2nd if statement
+if (5,10):
+print('hello')
+
+# 3rd if statement
+if (yes):
+  print('hello')
+
+# 4th if statement
+if (5,10): print('hello')
+solution
+2nd statement: IndentationError: expected an indented block, 
+3rd statement: NameError: name 'yes' is not defined. NOTE: The condition
+ in if statement is (5,10), which is a tuple containing the values 5 and 10. 
+In Python, non-empty containers like tuples are considered "truthy,"
+ meaning they are treated as true in a boolean context. 
+
+6. What is the output of the following python code?
+if 4 + 5 == 10:
+    print("TRUE")
+else:
+    print("FALSE")
+print("TRUE")
+Ans= FALSE
+     TRUE
+7. x = 0
+a = 6
+b = 6
+if a > 0:
+    if b < 0: 
+        x = x + 6 
+    elif a > 6:
+        x = x + 5
+    else:
+        x = x + 4
+else:
+    x = x + 3
+
+print(x) 
+    x = 0: Initializes a variable x with the value 0.
+    a = 6: Initializes a variable a with the value 6.
+    b = 6: Initializes a variable b with the value 6.
+
+Now, let's go through the conditional statements:
+
+    if a > 0:: This is the first conditional statement. It checks
+ if the value of variable a is greater than 0. In this case, a is 6, 
+which is greater than 0, so this condition is true.
+
+    Inside the first if block, there is another conditional statement:
+
+    yaml
+
+if b < 0:
+    x = x + 6
+elif a > 6:
+    x = x + 5
+else:
+    x = x + 4
+
+a. if b < 0:: This checks if the value of variable b is less than 0. 
+In this case, b is 6, which is not less than 0, so this condition is false, 
+and we move on to the elif part.
+
+b. elif a > 6:: This checks if the value of variable a is greater than 6.
+ As we established earlier, a is 6, which is not greater than 6, so this condition is false as well.
+
+c. Since both the if and elif conditions are false, the code inside the else block is executed:
+
+makefile
+
+    x = x + 4
+
+    This means x is incremented by 4, so x becomes 0 + 4, which is 4.
+
+    The else block of the outer if statement is skipped because the initial 
+condition (a > 0) was true. So, we don't execute the x = x + 3 statement
+ inside the else block.
+
+Finally, after all the conditional statements are evaluated, we reach the 
+print(x) statement, which will print the value of x. In this case, x is 4, 
+so it will print "4" to the console.
+
+8. Which statement will check if a is equal to b?
+solution
+In Python, you can also use parentheses around the condition in an if
+ statement, and it will not affect the functionality. The parentheses 
+can be used for readability or to clarify the order of operations in more complex conditions. 
+So both the statements "if (a == b):" and "if a == b:" are correct. 
+
+9. What does the following Python program display?
+x = 3
+if ( x == 0 ):
+  print("Am I here?")
+elif ( x == 3 ):
+  print("Or here?")
+print("Or over here?")
+solution
+Or here? Or over here
+
+10. Which of the following is not a boolean expression?
+a. 3+4==7
+b. 3+4
+c. 3==4
+d. true
+Ans = b 
