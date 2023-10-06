@@ -1,0 +1,373 @@
+GIC AND BIT OPERATIONS
+1. What will be the output of the following Python code?is_hungry = False
+if(not is_hungry):
+  print("You are not hungry")
+else:
+  print("You are hungry")
+
+This code is a simple Python program that uses a conditional statement
+ (an if statement) to check whether a variable is_hungry is False or
+ True and then prints a corresponding message based on its value.
+
+Here's an explanation of the code step by step:
+
+    is_hungry = False: This line of code initializes a boolean variable
+ is_hungry and sets its value to False. In Python, a boolean variable can
+ have two values: True or False. In this case, it's set to False, which
+ means "not hungry."
+
+    if (not is_hungry):: This line begins an if statement. The if statement 
+checks whether the condition inside the parentheses is True or False. In this
+ case, it's checking whether not is_hungry is True. The not keyword is used to
+ negate the value of is_hungry,
+ so it's checking if "not hungry" is True.
+
+    print("You are not hungry"):: If the condition inside the if statement 
+
+evaluates to True, which means that is_hungry is False, then this line is executed.
+ It prints the message "You are not hungry" to the console.
+
+    else:: If the condition inside the if statement evaluates to False, this 
+line marks the start of the else block. In this case, it means that is_hungry is True.
+
+    print("You are hungry"):: Inside the else block, this line is executed. 
+It prints the message "You are hungry" to the console because is_hungry is 
+True in this case.
+
+Since you initialized is_hungry to False, the condition not is_hungry is True, 
+and the code will print "You are not hungry" to the console. If you were to change 
+the initial value of is_hungry to True, it would print "You are hungry" because the
+ condition not is_hungry would then evaluate to False.
+
+2. Which python operator means ‘less than or equal to’?
+<=
+
+3. Which of the following will evaluate to true?
+False or True
+
+4. What is the output of the following python code?
+x = 6
+y = 7
+print(x == y)
+solution
+This code is a Python program that assigns the values 6 to the variable x 
+and 7 to the variable y. Then, it checks whether x is equal to y using 
+the == operator and prints the result. Here's the explanation step by step:
+
+    x = 6: This line assigns the value 6 to the variable x. So, x now holds the value 6.
+
+    y = 7: This line assigns the value 7 to the variable y. Now, y holds the value 7.
+
+    print(x == y): This line contains a comparison using the == operator. 
+It checks whether the value of x is equal to the value of y. In this case, 
+it's checking if 6 is equal to 7. Since 6 is not equal to 7, this comparison 
+evaluates to False.
+
+    The print function is used to output the result of the comparison to the console.
+
+So, when you run this code, it will print False to the console because x is not equal to y.
+
+5. What is the output of the following python code?
+x = 6
+print(x > 7 or x < 12)
+solution
+True
+
+6. Which python operator means ‘bigger than or equal to’?
+=>
+
+7. What will be the output of the following Python code?
+is_hungry = True
+if(not is_hungry):
+  print("You are not hungry")
+else:
+  print("You are hungry")
+Certainly! This code is a Python program that uses a conditional statement
+ (an if statement) to check the value of the is_hungry variable and print a
+ message based on its value. Here's a step-by-step explanation of the code:
+
+    is_hungry = True: This line initializes a boolean variable is_hungry and 
+sets its value to True. In this context, True typically represents being hungry.
+
+    if (not is_hungry):: This line begins an if statement. The if statement 
+checks whether the condition inside the parentheses is True or False. In this 
+case, it's checking whether not is_hungry is True. The not keyword is used to
+ negate the 
+value of is_hungry, so it's checking if "not hungry" is True.
+
+    print("You are not hungry"):: If the condition inside the if statement 
+evaluates to True, which means that is_hungry is False (because of the not), 
+then this line is executed. It prints the message "You are not hungry" to the console.
+
+    else:: If the condition inside the if statement evaluates to False, this
+ line marks the start of the else block. In this case, it means that is_hungry is True.
+
+    print("You are hungry"):: Inside the else block, this line is executed. 
+It prints the message "You are hungry" to the console because is_hungry is True.
+
+Since you initialized is_hungry to True, the condition not is_hungry evaluates to 
+False, and the code will execute the else block. Therefore, when you run this code,
+ it will print "You are hungry" to the console because is_hungry is True in this case.
+
+BITWISE OPERATORS
+1. What will be the output of the following Python expression?
+
+5^11
+solution
+
+2. What will be the output of the following Python code snippet if x=2?
+In Python, the << operator is used for bitwise left shift. When you shift a number
+ left by a specified number of positions, it effectively multiplies the number by 2 
+raised to the power of that number of positions.
+
+In your code snippet, you have:
+
+python
+
+x = 2
+result = x << 2
+
+Here, you are shifting the value of x (which is 2) left by 2 positions. This is equivalent
+ to multiplying 2 by 2 raised to the power of 2:
+
+2 << 2 = 2 * (2^2) = 2 * 4 = 8
+So, the output of the code x << 2 when x = 2 will be 8.
+
+3. Bitwise _________ gives 1 if either of the bits is 1 and 0 when both of the bits are 0.
+solution
+
+The bitwise operation that gives 1 if either of the bits is 1 and 0 when both of the bits
+ are 0 is called "bitwise OR," often denoted by the symbol "|".
+
+In a bitwise OR operation, if either of the corresponding bits in the operands is 1, the resulting 
+bit will be 1. Only when both bits are 0 will the resulting bit be 0.
+
+Here's a truth table for bitwise OR:
+
+css
+
+| A | B | A | B | A OR B |
+|---|---|---|---|-------|
+| 0 | 0 | 0 | 0 |   0   |
+| 0 | 1 | 0 | 1 |   1   |
+| 1 | 0 | 1 | 0 |   1   |
+| 1 | 1 | 1 | 1 |   1   |
+
+    A bitwise OR of 0 and 0 gives 0.
+    A bitwise OR of 0 and 1, or 1 and 0, gives 1.
+    A bitwise OR of 1 and 1 gives 1.
+
+Was this response better or worse?
+
+4. What will be the output of the following Python code snippet if x=2 ?
+
+x << 4
+
+In Python, the << operator is used for bitwise left shift. When you shift a number left
+ by a specified number of positions, it effectively multiplies the number by 2 raised to 
+the power of that number of positions.
+
+In your code snippet, you have:
+
+python
+
+x = 2
+result = x << 4
+
+Here, you are shifting the value of x (which is 2) left by 4 positions. This is equivalent to 
+multiplying 2 by 2 raised to the power of 4:
+
+2 << 4 = 2 * (2^4) = 2 * 16 = 32
+
+5. Which of the following represents the bitwise XOR operator?
+solution
+ ^
+
+6. What will be the output of the following Python expression?
+
+~200
+
+7. In Python, the ~ operator is used for bitwise negation or bitwise NOT. When you apply 
+the ~ operator to a number x, it performs a bitwise negation where each bit in x is flipped (1s become 0s and vice versa).
+
+For example:
+
+python
+
+~0 = -1
+~1 = -2
+~2 = -3
+...
+
+Now, let's consider your expression:
+
+python
+
+result = ~200
+
+The number 200 in binary is 11001000. When we apply bitwise negation to 200, each bit is flipped:
+
+makefile
+
+Original:   11001000
+Flipped:    00110111
+
+In two's complement representation, which Python uses for signed integers, flipping the bits and 
+interpreting it as a signed integer gives us the result. The flipped bits represent the value -57 in decimal.
+
+So, the output of the expression ~200 in Python will be -201.
+
+So, the output of the code x << 4 when x = 2 will be 32.
+
+8. Which operator is used by the or() function?
+solution
+the pipe (|)
+
+9. What will be the output of the following Python expression?
+
+print(22 << 1)
+ solution
+The << operator in Python is used for bitwise left shift. When you shift a number left by a 
+specified number of positions, it effectively multiplies the number by 2 raised to the power 
+of that number of positions.
+
+In your code snippet:
+
+python
+
+print(22 << 1)
+
+You are shifting the value 22 left by 1 position. This is equivalent to multiplying 22 by 2 
+raised to the power of 1:
+
+22 << 1 = 22 * (2^1) = 22 * 2 = 44
+
+So, the output of the expression print(22 << 1) will be 44.
+
+10. Bitwise _________ gives 1 if both of the bits is 1 and 0 when either of the bits are 0.
+solution
+The bitwise operation that gives 1 if both of the bits are 1 and 0 when either of the bits is
+ 0 is called "bitwise AND," often denoted by the symbol &.
+
+In a bitwise AND operation, both corresponding bits in the operands must be 1 for the resulting
+ bit to be 1. If either or both bits are 0, the resulting bit will be 0.
+
+Here's a truth table for bitwise AND:
+
+css
+
+| A | B | A AND B |
+|---|---|---------|
+| 0 | 0 |    0    |
+| 0 | 1 |    0    |
+| 1 | 0 |    0    |
+| 1 | 1 |    1    |
+
+    A bitwise AND of 0 and 0 gives 0.
+    A bitwise AND of 0 and 1, or 1 and 0, gives 0.
+    A bitwise AND of 1 and 1 gives 1.
+
+11. What will be the output of the following Python code?
+
+a = 20
+b = 5
+print("a & b =", a & b)
+ solution
+The code you provided calculates the bitwise AND (&) of two integers, a and b,
+ and then prints the result. Here's what it does step by step:
+
+    a = 20: This line assigns the value 20 to the variable a.
+
+    b = 5: This line assigns the value 5 to the variable b.
+
+    print("a & b =", a & b): This line calculates the bitwise AND of a and b using 
+the & operator and then prints the result along with the text "a & b =".
+
+Now, let's calculate the bitwise AND of 20 and 5:
+
+In binary:
+
+    a in binary is 10100.
+    b in binary is 00101.
+
+Performing bitwise AND:
+
+markdown
+
+  10100
+& 00101
+---------
+  00100
+
+12. What will be the output of the following Python code?
+
+a = 20
+b = 5
+print("a | b =", a | b)
+
+solution
+The given Python code calculates and prints the result of a bitwise OR operation between
+ two integer variables a and b. Here's what each part of the code does:
+
+    a = 20: This line assigns the value 20 to the variable a.
+
+    b = 5: This line assigns the value 5 to the variable b.
+
+    print("a | b =", a | b): This line prints the result of the bitwise OR 
+operation between a and b. The | operator performs a bitwise OR operation between 
+corresponding bits of a and b. It sets each bit in the result to 1 if at least one 
+of the corresponding bits in a or b is 1.
+
+Let's break down the bitwise OR operation for these values:
+
+    Binary representation of a (20 in decimal): 10100
+    Binary representation of b (5 in decimal): 00101
+
+Now, we perform the bitwise OR operation:
+
+markdown
+
+  10100
+| 00101
+---------
+  10101
+
+So, the result of a | b is 10101 in binary, which is equivalent to 21 in decimal.
+
+The code will output:
+
+css
+
+a | b = 21
+
+So, the output of the code will be:
+
+css
+
+a | b = 21
+
+It tells us that the result of a | b is 21.
+
+
+The result is 00100 in binary, which is equal to 4 in decimal.
+
+So, the output of the code will be:
+
+css
+
+a & b = 4
+
+
+It's stating that the bitwise AND of 20 and 5 is 4.
+
+12. What will be the output of the following Python expression?
+
+int(1001)
+ solution
+
+1001
+
+13. Bitwise _________ gives 1 if either of the bits is 1 and 0 when both of the bits are 1.
+
+
+
