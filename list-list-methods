@@ -1,0 +1,669 @@
+ST
+1. The given Python code defines a list numbers with five elements
+ [1, 2, 3, 4, 5]. Then, it assigns the value 6 to the element at index 4 
+(which is the fifth element in the list since Python uses zero-based indexing). 
+After this assignment, the list numbers will look like this: [1, 2, 3, 4, 6].
+
+Finally, it prints the element at index 4 using print(numbers[4]). The element 
+at index 4 in the modified list is 6.
+
+So, the output of the code will be:
+
+6
+
+It tells us that the value at index 4 of the numbers list is 6.
+
+2. The given Python code is working with a list called list1, and it is using 
+slicing to extract a sublist from list1. Let's break down the code:
+
+    list1 = [10, 11, 12, 13, 14]: This line initializes a list called list1 with 
+five elements [10, 11, 12, 13, 14].
+
+    print(list1[::3]): This line uses slicing to create a new list based on list1. 
+The slicing syntax [start:stop:step] is used here.
+        start is not specified, so it defaults to the beginning of the list (index 0).
+        stop is not specified, so it defaults to the end of the list (index 5).
+        step is specified as 3, which means it will select every third element 
+starting from the beginning.
+
+So, the code list1[::3] selects elements from list1 with a step of 3, starting 
+from the beginning. Here's how it works:
+
+    Element at index 0: 10
+    Skip two elements
+    Element at index 3: 13
+
+So, the output of the code will be:
+
+csharp
+
+[10, 13]
+
+It tells us that the result of list1[::3] is a new list containing [10, 13], which
+ are the elements at indices 0 and 3 of list1.
+
+3. What will be the output of below Python code?
+
+list1 = [1, 2, 3, 4, 5]
+print(list1[4])
+
+
+
+The given Python code defines a list list1 with five elements [1, 2, 3, 4, 5], 
+and then it prints the element at index 4.
+
+In Python, list indexing is zero-based, meaning the first element of the list is at
+ index 0, the second element is at index 1, and so on. Therefore, when you access list1[4], 
+you are retrieving the element at the fifth position in the list.
+
+4. Which of the following will reverse list1=[2,5,3,1]?
+solution
+
+    Using slicing:
+
+python
+
+list1 = [2, 5, 3, 1]
+reversed_list = list1[::-1]
+print(reversed_list)
+
+Both of these approaches will reverse the list list1, and the output will be:
+
+csharp
+
+[1, 3, 5, 2]
+
+This output shows the reversed order of the elements in the list.
+
+
+So, the output of the code will be:
+
+5
+
+It tells us that the value at index 4 of the list1 is 5.
+
+5. What will be the output of below Python code?
+
+list1 = [1, 2, 3, 4, 5]
+list1[0] = 10
+print(list1)
+ solution
+
+The given Python code modifies a list called list1 and then prints its contents. 
+Let's break down the code step by step:
+
+    list1 = [1, 2, 3, 4, 5]: This line initializes a list named list1 with five
+ elements [1, 2, 3, 4, 5].
+
+    list1[0] = 10: This line modifies the value at the first position (index 0) 
+of list1. It sets the value at index 0 to 10. In Python, list indexing is zero-based, 
+so list1[0] refers to the first element of the list.
+
+After this line of code, the list list1 will be updated to [10, 2, 3, 4, 5] because
+ we changed the value at index 0 from 1 to 10.
+
+    print(list1): This line prints the contents of the modified list1 to the console.
+
+So, the output of the code will be:
+
+csharp
+
+[10, 2, 3, 4, 5]
+
+This output tells us that the value at index 0 of list1 has been changed from 1 to 10, 
+and the list now contains [10, 2, 3, 4, 5].
+
+LIST METHODS
+1. What will be the output of below Python code?
+
+list1 = [4, 4, 3, 1]
+list1.pop(2)
+print(list1)
+
+2. The given Python code works with a list named list1, specifically removing an element
+ using the pop() method. Let's break down the code step by step:
+
+    list1 = [4, 4, 3, 1]: This line initializes a list called list1 with four elements [4, 4, 3, 1].
+
+    list1.pop(2): This line uses the pop() method to remove an element from list1. The argument
+ 2 is the index of the element to be removed. In Python, list indexing is zero-based, so list1.pop(2) 
+removes the element at index 2.
+
+    After this operation, the element at index 2 (which is 3) is removed from list1, and list1
+ is modified as [4, 4, 1].
+
+    print(list1): This line prints the modified list1 to the console.
+
+So, the output of the code will be:
+
+csharp
+
+[4, 4, 1]
+
+This output shows the updated contents of list1 after removing the element at index 2.
+
+3. What will be the output of following Python code?
+
+list1=["Go","Java","C","Python"]
+print(max(list1))
+
+solution
+The Python code you provided is attempting to find the maximum element in the list list1 
+and then print it using the max() function. In this case, the elements in list1 are strings, 
+and the max() function will find the maximum string based on lexicographic (dictionary) order.
+
+Here's what happens:
+
+    list1 is defined as ["Go", "Java", "C", "Python"], which is a list containing four strings.
+    The max() function is called on list1.
+    The max() function iterates through the elements in the list and returns the maximum element 
+based on lexicographic order.
+
+Now, let's determine the maximum element based on lexicographic order:
+
+    "Go" comes before "Java" because 'G' comes before 'J' in the alphabet.
+    "Java" comes before "C" because 'J' comes before 'C'.
+    "Java" also comes before "Python" because 'J' comes before 'P'.
+
+So, based on lexicographic order, "Python" is the maximum string in the list.
+
+The output of the code will be:
+
+Python
+
+It will print "Python" to the console because that is the maximum element in the list when 
+comparing the strings lexicographically.
+
+4. What will be the output of below Python code?
+
+num = [4, 4, 3, 1]
+num.sort()
+print(num)
+
+ The Python code you provided is sorting a list of numbers (num) in ascending order
+ using the sort() method and then printing the sorted list. Here's what happens step by step:
+
+    num is defined as [4, 4, 3, 1], which is a list containing four integers.
+
+    The sort() method is called on the num list. This method sorts the list in ascending order, 
+meaning it arranges the elements from smallest to largest.
+
+    After sorting, the num list becomes [1, 3, 4, 4].
+
+    Finally, the print() function is used to print the sorted list, which is [1, 3, 4, 4].
+
+So, the output of the code will be:
+
+csharp
+
+[1, 3, 4, 4]
+
+It prints the sorted list of numbers in ascending order. Note that the original list is modified
+ in place by the sort() method.
+
+5. What will be the output of following Python code?
+
+list1=["Go","Java","C","Rust"]
+print(min(list1))
+
+6. The Python code you provided is attempting to find the minimum element in the list 
+list1 and then print it using the min() function. In this case, the elements in list1 
+are strings, and the min() function will find the minimum string based on lexicographic
+ (dictionary) order.
+
+Here's what happens:
+
+    list1 is defined as ["Go", "Java", "C", "Rust"], which is a list containing four strings.
+
+    The min() function is called on list1.
+
+    The min() function iterates through the elements in the list and returns the minimum 
+element based on lexicographic order.
+
+Now, let's determine the minimum element based on lexicographic order:
+
+    "C" comes before "Go" because 'C' comes before 'G' in the alphabet.
+    "C" also comes before "Java" because 'C' comes before 'J'.
+    "C" also comes before "Rust" because 'C' comes before 'R'.
+
+So, based on lexicographic order, "C" is the minimum string in the list.
+
+The output of the code will be:
+
+mathematica
+
+C
+
+It will print "C" to the console because that is the minimum element in the list when 
+comparing the strings lexicographically.
+
+7. What is the len(list1) for below value?
+
+list1=['h', 'e', 'l', 'l', 'o']
+
+The code len(list1) is used to find the length (i.e., the number of elements) of a list in Python.
+
+In this specific case, the list list1 contains the elements ['h', 'e', 'l', 'l', 'o']. 
+Therefore, when you execute len(list1), it will return the number of elements in the list, which is 5.
+
+So, the value of len(list1) for the given list is 5.
+
+8. What will be the output of below Python code?
+
+list1 = [10, 20, 30, 40, 50]
+list1.append(60)
+print(list1)
+
+solution
+The Python code you provided is modifying a list named list1 by adding an element to it using 
+the append() method, and then it prints the modified list. Here's what happens step by step:
+
+    list1 is initially defined as [10, 20, 30, 40, 50], which is a list containing five integers.
+
+    The append() method is called on list1, and it is given the argument 60. This method adds the
+ value 60 to the end of the list.
+
+    After the append() operation, the list1 list becomes [10, 20, 30, 40, 50, 60].
+
+    Finally, the print() function is used to print the modified list, which is [10, 20, 30, 40, 50, 60].
+
+So, the output of the code will be:
+
+csharp
+
+[10, 20, 30, 40, 50, 60]
+
+It prints the modified list1 with the additional element 60 at the end.
+
+9. What will be the output of below Python code?
+
+list1=['UK','India','Canada']
+
+list1.insert(1,8)
+
+print(list1)
+
+10. The Python code you provided is attempting to insert an integer (8) into a list named 
+list1 at a specific position (index 1) and then print the modified list. Here's what happens step by step:
+
+    list1 is initially defined as ['UK', 'India', 'Canada'], which is a list containing three strings.
+
+    The insert() method is called on list1. This method is used to insert an element at a specified
+ position in the list. In this case, it's inserting the integer 8 at index 1.
+
+    After the insert() operation, the list1 list becomes ['UK', 8, 'India', 'Canada']. The integer 8 
+has been inserted at index 1, pushing the other elements to the right.
+
+    Finally, the print() function is used to print the modified list, which is ['UK', 8, 'India', 'Canada'].
+
+So, the output of the code will be:
+
+css
+
+['UK', 8, 'India', 'Canada']
+
+It prints the modified list1 with the integer 8 inserted at index 1.
+
+11. What will be the output of below Python code?
+
+ages = [56, 72, 24, 46]
+ages.sort()
+print(ages)
+
+The Python code you provided is sorting a list of integers ages in ascending 
+order using the sort() method and then printing the sorted list. Here's what happens step by step:
+
+    ages is defined as [56, 72, 24, 46], which is a list containing four integers.
+
+    The sort() method is called on the ages list. This method sorts the list in 
+ascending order, arranging the elements from smallest to largest.
+
+    After sorting, the ages list becomes [24, 46, 56, 72].
+
+    Finally, the print() function is used to print the sorted list, which is [24, 46, 56, 72].
+
+So, the output of the code will be:
+
+csharp
+
+[24, 46, 56, 72]
+
+It prints the sorted list of ages in ascending order. Note that the original list is
+ modified in place by the sort() method.
+
+ST
+1. The given Python code defines a list numbers with five elements
+ [1, 2, 3, 4, 5]. Then, it assigns the value 6 to the element at index 4 
+(which is the fifth element in the list since Python uses zero-based indexing). 
+After this assignment, the list numbers will look like this: [1, 2, 3, 4, 6].
+
+Finally, it prints the element at index 4 using print(numbers[4]). The element 
+at index 4 in the modified list is 6.
+
+So, the output of the code will be:
+
+6
+
+It tells us that the value at index 4 of the numbers list is 6.
+
+2. The given Python code is working with a list called list1, and it is using 
+slicing to extract a sublist from list1. Let's break down the code:
+
+    list1 = [10, 11, 12, 13, 14]: This line initializes a list called list1 with 
+five elements [10, 11, 12, 13, 14].
+
+    print(list1[::3]): This line uses slicing to create a new list based on list1. 
+The slicing syntax [start:stop:step] is used here.
+        start is not specified, so it defaults to the beginning of the list (index 0).
+        stop is not specified, so it defaults to the end of the list (index 5).
+        step is specified as 3, which means it will select every third element 
+starting from the beginning.
+
+So, the code list1[::3] selects elements from list1 with a step of 3, starting 
+from the beginning. Here's how it works:
+
+    Element at index 0: 10
+    Skip two elements
+    Element at index 3: 13
+
+So, the output of the code will be:
+
+csharp
+
+[10, 13]
+
+It tells us that the result of list1[::3] is a new list containing [10, 13], which
+ are the elements at indices 0 and 3 of list1.
+
+3. What will be the output of below Python code?
+
+list1 = [1, 2, 3, 4, 5]
+print(list1[4])
+
+
+
+The given Python code defines a list list1 with five elements [1, 2, 3, 4, 5], 
+and then it prints the element at index 4.
+
+In Python, list indexing is zero-based, meaning the first element of the list is at
+ index 0, the second element is at index 1, and so on. Therefore, when you access list1[4], 
+you are retrieving the element at the fifth position in the list.
+
+4. Which of the following will reverse list1=[2,5,3,1]?
+solution
+
+    Using slicing:
+
+python
+
+list1 = [2, 5, 3, 1]
+reversed_list = list1[::-1]
+print(reversed_list)
+
+Both of these approaches will reverse the list list1, and the output will be:
+
+csharp
+
+[1, 3, 5, 2]
+
+This output shows the reversed order of the elements in the list.
+
+
+So, the output of the code will be:
+
+5
+
+It tells us that the value at index 4 of the list1 is 5.
+
+5. What will be the output of below Python code?
+
+list1 = [1, 2, 3, 4, 5]
+list1[0] = 10
+print(list1)
+ solution
+
+The given Python code modifies a list called list1 and then prints its contents. 
+Let's break down the code step by step:
+
+    list1 = [1, 2, 3, 4, 5]: This line initializes a list named list1 with five
+ elements [1, 2, 3, 4, 5].
+
+    list1[0] = 10: This line modifies the value at the first position (index 0) 
+of list1. It sets the value at index 0 to 10. In Python, list indexing is zero-based, 
+so list1[0] refers to the first element of the list.
+
+After this line of code, the list list1 will be updated to [10, 2, 3, 4, 5] because
+ we changed the value at index 0 from 1 to 10.
+
+    print(list1): This line prints the contents of the modified list1 to the console.
+
+So, the output of the code will be:
+
+csharp
+
+[10, 2, 3, 4, 5]
+
+This output tells us that the value at index 0 of list1 has been changed from 1 to 10, 
+and the list now contains [10, 2, 3, 4, 5].
+
+LIST METHODS
+1. What will be the output of below Python code?
+
+list1 = [4, 4, 3, 1]
+list1.pop(2)
+print(list1)
+
+2. The given Python code works with a list named list1, specifically removing an element
+ using the pop() method. Let's break down the code step by step:
+
+    list1 = [4, 4, 3, 1]: This line initializes a list called list1 with four elements [4, 4, 3, 1].
+
+    list1.pop(2): This line uses the pop() method to remove an element from list1. The argument
+ 2 is the index of the element to be removed. In Python, list indexing is zero-based, so list1.pop(2) 
+removes the element at index 2.
+
+    After this operation, the element at index 2 (which is 3) is removed from list1, and list1
+ is modified as [4, 4, 1].
+
+    print(list1): This line prints the modified list1 to the console.
+
+So, the output of the code will be:
+
+csharp
+
+[4, 4, 1]
+
+This output shows the updated contents of list1 after removing the element at index 2.
+
+3. What will be the output of following Python code?
+
+list1=["Go","Java","C","Python"]
+print(max(list1))
+
+solution
+The Python code you provided is attempting to find the maximum element in the list list1 
+and then print it using the max() function. In this case, the elements in list1 are strings, 
+and the max() function will find the maximum string based on lexicographic (dictionary) order.
+
+Here's what happens:
+
+    list1 is defined as ["Go", "Java", "C", "Python"], which is a list containing four strings.
+    The max() function is called on list1.
+    The max() function iterates through the elements in the list and returns the maximum element 
+based on lexicographic order.
+
+Now, let's determine the maximum element based on lexicographic order:
+
+    "Go" comes before "Java" because 'G' comes before 'J' in the alphabet.
+    "Java" comes before "C" because 'J' comes before 'C'.
+    "Java" also comes before "Python" because 'J' comes before 'P'.
+
+So, based on lexicographic order, "Python" is the maximum string in the list.
+
+The output of the code will be:
+
+Python
+
+It will print "Python" to the console because that is the maximum element in the list when 
+comparing the strings lexicographically.
+
+4. What will be the output of below Python code?
+
+num = [4, 4, 3, 1]
+num.sort()
+print(num)
+
+ The Python code you provided is sorting a list of numbers (num) in ascending order
+ using the sort() method and then printing the sorted list. Here's what happens step by step:
+
+    num is defined as [4, 4, 3, 1], which is a list containing four integers.
+
+    The sort() method is called on the num list. This method sorts the list in ascending order, 
+meaning it arranges the elements from smallest to largest.
+
+    After sorting, the num list becomes [1, 3, 4, 4].
+
+    Finally, the print() function is used to print the sorted list, which is [1, 3, 4, 4].
+
+So, the output of the code will be:
+
+csharp
+
+[1, 3, 4, 4]
+
+It prints the sorted list of numbers in ascending order. Note that the original list is modified
+ in place by the sort() method.
+
+5. What will be the output of following Python code?
+
+list1=["Go","Java","C","Rust"]
+print(min(list1))
+
+6. The Python code you provided is attempting to find the minimum element in the list 
+list1 and then print it using the min() function. In this case, the elements in list1 
+are strings, and the min() function will find the minimum string based on lexicographic
+ (dictionary) order.
+
+Here's what happens:
+
+    list1 is defined as ["Go", "Java", "C", "Rust"], which is a list containing four strings.
+
+    The min() function is called on list1.
+
+    The min() function iterates through the elements in the list and returns the minimum 
+element based on lexicographic order.
+
+Now, let's determine the minimum element based on lexicographic order:
+
+    "C" comes before "Go" because 'C' comes before 'G' in the alphabet.
+    "C" also comes before "Java" because 'C' comes before 'J'.
+    "C" also comes before "Rust" because 'C' comes before 'R'.
+
+So, based on lexicographic order, "C" is the minimum string in the list.
+
+The output of the code will be:
+
+mathematica
+
+C
+
+It will print "C" to the console because that is the minimum element in the list when 
+comparing the strings lexicographically.
+
+7. What is the len(list1) for below value?
+
+list1=['h', 'e', 'l', 'l', 'o']
+
+The code len(list1) is used to find the length (i.e., the number of elements) of a list in Python.
+
+In this specific case, the list list1 contains the elements ['h', 'e', 'l', 'l', 'o']. 
+Therefore, when you execute len(list1), it will return the number of elements in the list, which is 5.
+
+So, the value of len(list1) for the given list is 5.
+
+8. What will be the output of below Python code?
+
+list1 = [10, 20, 30, 40, 50]
+list1.append(60)
+print(list1)
+
+solution
+The Python code you provided is modifying a list named list1 by adding an element to it using 
+the append() method, and then it prints the modified list. Here's what happens step by step:
+
+    list1 is initially defined as [10, 20, 30, 40, 50], which is a list containing five integers.
+
+    The append() method is called on list1, and it is given the argument 60. This method adds the
+ value 60 to the end of the list.
+
+    After the append() operation, the list1 list becomes [10, 20, 30, 40, 50, 60].
+
+    Finally, the print() function is used to print the modified list, which is [10, 20, 30, 40, 50, 60].
+
+So, the output of the code will be:
+
+csharp
+
+[10, 20, 30, 40, 50, 60]
+
+It prints the modified list1 with the additional element 60 at the end.
+
+9. What will be the output of below Python code?
+
+list1=['UK','India','Canada']
+
+list1.insert(1,8)
+
+print(list1)
+
+10. The Python code you provided is attempting to insert an integer (8) into a list named 
+list1 at a specific position (index 1) and then print the modified list. Here's what happens step by step:
+
+    list1 is initially defined as ['UK', 'India', 'Canada'], which is a list containing three strings.
+
+    The insert() method is called on list1. This method is used to insert an element at a specified
+ position in the list. In this case, it's inserting the integer 8 at index 1.
+
+    After the insert() operation, the list1 list becomes ['UK', 8, 'India', 'Canada']. The integer 8 
+has been inserted at index 1, pushing the other elements to the right.
+
+    Finally, the print() function is used to print the modified list, which is ['UK', 8, 'India', 'Canada'].
+
+So, the output of the code will be:
+
+css
+
+['UK', 8, 'India', 'Canada']
+
+It prints the modified list1 with the integer 8 inserted at index 1.
+
+11. What will be the output of below Python code?
+
+ages = [56, 72, 24, 46]
+ages.sort()
+print(ages)
+
+The Python code you provided is sorting a list of integers ages in ascending 
+order using the sort() method and then printing the sorted list. Here's what happens step by step:
+
+    ages is defined as [56, 72, 24, 46], which is a list containing four integers.
+
+    The sort() method is called on the ages list. This method sorts the list in 
+ascending order, arranging the elements from smallest to largest.
+
+    After sorting, the ages list becomes [24, 46, 56, 72].
+
+    Finally, the print() function is used to print the sorted list, which is [24, 46, 56, 72].
+
+So, the output of the code will be:
+
+csharp
+
+[24, 46, 56, 72]
+
+It prints the sorted list of ages in ascending order. Note that the original list is
+ modified in place by the sort() method.
+
+:wq!
+
+
