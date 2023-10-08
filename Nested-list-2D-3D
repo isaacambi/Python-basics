@@ -1,0 +1,972 @@
+TED LISTS
+1. What will be the output of the following Python code?
+
+a = []
+for i in range(5):
+    a.append([])
+    for j in range(5):
+        a[i].append(j)
+
+print(a[2][3])
+ solution
+The provided Python code creates a two-dimensional list a using nested 
+for loops and then accesses a specific element within that list. Here's what happens step by step:
+
+    An empty list a is initialized as [].
+
+    The outer for loop iterates over the range of numbers from 0 to 4 (inclusive)
+ using range(5). This loop runs five times.
+
+    Inside the outer loop, an empty list is appended to a in each iteration. 
+This effectively creates a list of lists. After this loop, a looks like this:
+
+    css
+
+[[], [], [], [], []]
+
+The inner for loop iterates over the range of numbers from 0 to 4 (inclusive) 
+using range(5). This loop also runs five times.
+
+Inside the inner loop, the code appends the values of j (which range from 0 to 4)
+ to the lists within a. Each list within a corresponds to a row in the two-dimensional
+ grid, and the values j are added as elements within those rows. After both loops, 
+a will look like this:
+
+css
+
+    [[0, 1, 2, 3, 4],
+     [0, 1, 2, 3, 4],
+     [0, 1, 2, 3, 4],
+     [0, 1, 2, 3, 4],
+     [0, 1, 2, 3, 4]]
+
+    Finally, the code accesses the element at row index 2 and column index 3
+ within the two-dimensional list a using a[2][3].
+
+    a[2] refers to the third row (remember that indexing is 0-based), which is [0, 1, 2, 3, 4].
+
+    a[2][3] then accesses the element at index 3 within that row, which is 3.
+
+So, the output of the code will be:
+
+3
+
+It prints the value 3, which is the element at row index 2 and column index 3 
+within the two-dimensional list a.
+
+2. What will be the output of the following Python code?
+
+a = []
+for i in range(2):
+    a.append([])
+    for j in range(2):
+        a[i].append(j)
+
+print(a)
+
+solution
+The provided Python code creates a two-dimensional list a with a size of
+ 2x2 using nested for loops, and then prints the resulting list. Here's 
+what happens step by step:
+
+    An empty list a is initialized as [].
+
+    The outer for loop iterates over the range of numbers from 0 to 1 
+(inclusive) using range(2). This loop runs two times.
+
+    Inside the outer loop, an empty list is appended to a in each iteration. 
+This effectively creates two empty lists within the outer list. After this loop, a looks like this:
+
+    lua
+
+[[], []]
+
+The inner for loop iterates over the range of numbers from 0 to 1
+ (inclusive) using range(2). This loop also runs two times.
+
+Inside the inner loop, the code appends the values of j (which range from 0 to 1)
+ to the lists within a. Each list within a corresponds to a row in the 2x2 grid, 
+and the values j are added as elements within those rows. After both loops, a will look like this:
+
+lua
+
+    [[0, 1], [0, 1]]
+
+    Finally, the print() function is used to print the contents of the two-dimensional list a.
+
+The output of the code will be:
+
+lua
+
+[[0, 1], [0, 1]]
+
+It prints the 2x2 list a, where each row contains the values [0, 1].
+
+3. The provided Python code starts with a matrix matrix defined as a list of lists. It then creates a new list matrix2 by flattening the original matrix, and finally, it prints the value at index 2 of matrix2. Here's a step-by-step explanation:
+
+    matrix is defined as:
+
+    lua
+
+[[0, 1, 2],
+ [0, 1, 2],
+ [0, 1, 2]]
+
+It's a 3x3 matrix containing integers.
+
+An empty list matrix2 is initialized as [].
+
+The code uses nested for loops to iterate over each sub-list (submatrix) 
+within the matrix and each value within those sub-lists.
+
+The innermost loop appends each value to the matrix2 list. This effectively
+ flattens the original matrix into a one-dimensional list.
+
+After the loops, matrix2 will contain all the values from the original 
+matrix in a flattened form:
+
+csharp
+
+    [0, 1, 2, 0, 1, 2, 0, 1, 2]
+
+    Finally, the code prints matrix2[2], which refers to the element at index
+ 2 of matrix2. In Python, indexing is 0-based, so this corresponds to the third 
+element of matrix2, which is 2.
+
+So, the output of the code will be:
+
+2
+
+It prints the value 2, which is the third element of the flattened matrix2.
+
+4. What will be the output of the following Python code?
+
+countries = [['Egypt', 'USA', 'India'],
+       ['Dubai', 'America', 'Spain'], 
+       ['London', 'England', 'France']]
+countries2  = [country for sublist in countries for country in 
+                       sublist if len(country) < 6]
+print(countries2)
+
+5. The provided Python code creates a flattened list countries2 by extracting and filtering elements from the nested list countries. Here's how it works step by step:
+
+    countries is defined as a list of lists containing country names:
+
+    python
+
+    countries = [['Egypt', 'USA', 'India'],
+                 ['Dubai', 'America', 'Spain'], 
+                 ['London', 'England', 'France']]
+
+    The code uses a list comprehension to create the countries2 list. 
+The list comprehension iterates over each sublist within the countries
+ list and then over each country within those sublists.
+
+    The condition if len(country) < 6 checks if the length of a country 
+name is less than 6 characters. If this condition is met, the country name
+ is included in the countries2 list.
+
+    After the list comprehension, countries2 will contain all the country
+ names from countries where the length of the country name is less than 6 characters.
+
+    Finally, the print() function is used to print the contents of the countries2 list.
+
+The output of the code will be:
+
+css
+
+['Egypt', 'USA', 'India', 'Dubai', 'Spain']
+
+It prints a list containing the country names that meet the condition 
+ (i.e., have a length of less than 6 characters) from the nested list countries.
+
+6. What will be the output of the following Python code?
+
+a = []
+for i in range(5):
+    a.append([])
+    for j in range(5):
+        a[i].append(j)
+
+print(a[3][3])
+solution
+
+The provided Python code creates a two-dimensional list a using nested for loops and then accesses a specific element within that list. Here's what happens step by step:
+
+    An empty list a is initialized as [].
+
+    The outer for loop iterates over the range of numbers from 0 to 4 (inclusive) using range(5). This loop runs five times.
+
+    Inside the outer loop, an empty list is appended to a in each iteration. This effectively creates a list of lists. After this loop, a looks like this:
+
+    css
+
+[[], [], [], [], []]
+
+The inner for loop iterates over the range of numbers from 0 to 4 (inclusive) using range(5). This loop also runs five times.
+
+Inside the inner loop, the code appends the values of j (which range from 0 to 4)
+ to the lists within a. Each list within a corresponds to a row in the two-dimensional 
+grid, and the values j are added as elements within those rows. After both loops, a will look like this:
+
+css
+
+    [[0, 1, 2, 3, 4],
+     [0, 1, 2, 3, 4],
+     [0, 1, 2, 3, 4],
+     [0, 1, 2, 3, 4],
+     [0, 1, 2, 3, 4]]
+
+    Finally, the code accesses the element at row index 3 and column index 3
+ within the two-dimensional list a using a[3][3].
+
+    a[3] refers to the fourth row (remember that indexing is 0-based), 
+which is [0, 1, 2, 3, 4].
+
+    a[3][3] then accesses the element at index 3 within that row, which is 3.
+
+So, the output of the code will be:
+
+3
+
+It indicates that the value at row index 3 and column index 3 within the 
+two-dimensional list a is 3.
+
+7. What will be the output of the following Python code?
+
+matrix = [[j for j in range(3)] for i in range(3)] 
+print(matrix[2][1])
+ solution
+
+The provided Python code uses a nested list comprehension to create a 3x3 matrix named matrix and then prints a specific element from that matrix. Here's how it works step by step:
+
+    The outer list comprehension [j for j in range(3)] generates a list [0, 1, 2]. This represents a row in the matrix where the elements are the numbers from 0 to 2.
+
+    The outer list comprehension [j for j in range(3)] is nested within 
+another list comprehension [... for i in range(3)]. This outer comprehension 
+iterates over the range of numbers from 0 to 2, creating three rows (since it runs three times).
+
+    As a result of the nested comprehensions, matrix is created as a 3x3 matrix,
+ where each row contains the numbers 0 to 2. It looks like this:
+
+    lua
+
+    [[0, 1, 2],
+     [0, 1, 2],
+     [0, 1, 2]]
+
+    Finally, the code accesses the element at row index 2 and column index 1 
+within the matrix using matrix[2][1].
+
+    matrix[2] refers to the third row (remember that indexing is 0-based), 
+which is [0, 1, 2].
+
+    matrix[2][1] then accesses the element at index 1 within that row, which is 1.
+
+So, the output of the code will be:
+
+1
+
+It indicates that the value at row index 2 and column index 1 within the 
+3x3 matrix matrix is 1.
+
+8. What will be the output of the following Python code?
+
+matrix = [[0, 1, 2], [0, 1, 2], [0, 1, 2]]
+
+matrix2 = []
+
+for submatrix in matrix:
+  for val in submatrix:
+    matrix2.append(val)
+
+print(matrix2[0])
+
+The provided Python code starts with a matrix matrix defined as a list of lists containing integers. It then creates a new list matrix2 by flattening the original matrix and prints the value at index 0 of matrix2. Here's a step-by-step explanation:
+
+    matrix is defined as:
+
+    python
+
+[[0, 1, 2],
+ [0, 1, 2],
+ [0, 1, 2]]
+
+It's a 3x3 matrix containing integers.
+
+An empty list matrix2 is initialized as [].
+
+The code uses nested for loops to iterate over each sub-list (submatrix)
+ within the matrix and then over each value within those sub-lists.
+
+The innermost loop appends each value to the matrix2 list. This effectively 
+flattens the original matrix into a one-dimensional list.
+
+After the loops, matrix2 will contain all the values from the original matrix 
+in a flattened form:
+
+csharp
+
+    [0, 1, 2, 0, 1, 2, 0, 1, 2]
+
+    Finally, the code prints matrix2[0], which refers to the element at index
+ 0 of matrix2. In Python, indexing is 0-based, so this corresponds to the first 
+element of matrix2, which is 0.
+
+So, the output of the code will be:
+
+0
+
+It prints the value 0, which is the first element of the flattened matrix2.
+
+
+9. Choose the correct answer to define a list “Num” which contains numbers
+ from 1-9 with 3 elements only in the row.
+
+10. What will be the output of the following Python code?
+
+matrix = [[j for j in range(3)] for i in range(3)] 
+print(matrix[1][2])
+ solution
+The provided Python code uses a nested list comprehension to create a 3x3
+ matrix named matrix and then prints a specific element from that matrix.
+ Here's how it works step by step:
+
+    The outer list comprehension [j for j in range(3)] generates a list [0, 1, 2]. 
+This represents a row in the matrix where the elements are the numbers from 0 to 2.
+
+    The outer list comprehension [j for j in range(3)] is nested 
+within another list comprehension [... for i in range(3)]. This outer 
+comprehension iterates over the range of numbers from 0 to 2, creating
+ three rows (since it runs three times).
+
+    As a result of the nested comprehensions, matrix is created as a 3x3
+ matrix, where each row contains the numbers 0 to 2. It looks like this:
+
+    lua
+
+    [[0, 1, 2],
+     [0, 1, 2],
+     [0, 1, 2]]
+
+    Finally, the code accesses the element at row index 1 and column index 2
+ within the matrix using matrix[1][2].
+
+    matrix[1] refers to the second row (remember that indexing is 0-based), 
+which is [0, 1, 2].
+
+    matrix[1][2] then accesses the element at index 2 within that row, which is 2.
+
+So, the output of the code will be:
+
+2
+
+It indicates that the value at row index 1 and column index 2 within the 3x3 matrix matrix is 2.
+
+
+11. What will be the output of the following Python code?
+
+matrix = [[j for j in range(4)] for i in range(4)] 
+print(matrix[3][1])
+ solution
+
+The provided Python code uses a nested list comprehension to create a 4x4 
+matrix named matrix and then prints a specific element from that matrix. 
+Here's how it works step by step:
+
+    The outer list comprehension [j for j in range(4)] generates a list [0, 1, 2, 3].
+ This represents a row in the matrix where the elements are the numbers from 0 to 3.
+
+    The outer list comprehension [j for j in range(4)] is nested within another list
+ comprehension [... for i in range(4)]. This outer comprehension iterates over the 
+range of numbers from 0 to 3, creating four rows (since it runs four times).
+
+    As a result of the nested comprehensions, matrix is created as a 4x4 matrix,
+ where each row contains the numbers 0 to 3. It looks like this:
+
+    lua
+
+    [[0, 1, 2, 3],
+     [0, 1, 2, 3],
+     [0, 1, 2, 3],
+     [0, 1, 2, 3]]
+
+    Finally, the code accesses the element at row index 3 and column index 1 
+within the matrix using matrix[3][1].
+
+    matrix[3] refers to the fourth row (remember that indexing is 0-based), which is [0, 1, 2, 3].
+
+    matrix[3][1] then accesses the element at index 1 within that row, which is 1.
+
+So, the output of the code will be:
+
+1
+
+It indicates that the value at row index 3 and column index 1 within
+ the 4x4 matrix matrix is 1.
+12. The provided Python code creates a flattened list countries2 by 
+extracting and filtering elements from the nested list countries. Here's how it works step by step:
+
+    countries is defined as a list of lists containing country names:
+
+    python
+
+    countries = [['Egypt', 'USA', 'India'],
+                 ['Dubai', 'America', 'Spain'], 
+                 ['London', 'England', 'France']]
+
+    It's a 3x3 matrix where each element is a string representing a country.
+
+    The code uses a list comprehension to create the countries2 list. 
+The list comprehension iterates over each sublist within the countries 
+list and then over each country within those sublists.
+
+    The condition if len(country) < 4 checks if the length of a country name 
+is less than 4 characters. If this condition is met, the country name is included
+ in the countries2 list.
+
+    After the list comprehension, countries2 will contain all the country names
+ from countries where the length of the country name is less than 4 characters.
+
+    Finally, the print() function is used to print the contents of the countries2 list.
+
+The output of the code will be:
+
+css
+
+['USA', 'India']
+
+It prints a list containing the country names that meet the condition (i.e., have a 
+length of less than 4 characters) from the nested list countries. In this case, 
+only "USA" and "India" meet the condition.
+
+
+NESTED LISTS 3D
+1. What will be the output of the following Python code?
+
+matrix = [[[k for k in range(3)] for j in range(3)] for i in range(3)]
+print(matrix[1][1][1])
+solution
+
+The provided Python code uses nested list comprehensions to create
+ a 3x3x3 three-dimensional matrix named matrix and then prints a specific 
+element from that matrix. Here's how it works step by step:
+
+    The innermost list comprehension [k for k in range(3)] generates a list
+ [0, 1, 2]. This represents a row within a 2D matrix where the elements are
+ the numbers from 0 to 2.
+
+    The middle list comprehension [k for k in range(3)] is nested within another
+ list comprehension [... for j in range(3)]. This middle comprehension iterates 
+over the range of numbers from 0 to 2, creating three rows (since it runs three times). 
+This represents one layer of the 3D matrix.
+
+    The outermost list comprehension [k for k in range(3)] is nested within
+ yet another list comprehension [... for i in range(3)]. This outermost comprehension 
+iterates over the range of numbers from 0 to 2, creating three layers of 2D matrices
+ (since it runs three times). This represents the entire 3D matrix.
+
+    As a result of the nested comprehensions, matrix is created as a 3x3x3 
+three-dimensional matrix, where each element is a number from 0 to 2, representing
+ rows within rows within rows.
+
+    Finally, the code accesses the element at position (1, 1, 1) within the
+ 3D matrix using matrix[1][1][1].
+
+    matrix[1] refers to the second layer of the matrix (remember that indexing is 0-based), 
+which is a 2D matrix:
+
+    lua
+
+[[0, 1, 2],
+ [0, 1, 2],
+ [0, 1, 2]]
+
+matrix[1][1] then refers to the second row within that 2D matrix:
+
+csharp
+
+    [0, 1, 2]
+
+    matrix[1][1][1] finally accesses the element at index 1 within that row, which is 1.
+
+So, the output of the code will be:
+
+1
+
+It indicates that the value at position (1, 1, 1) within the 3D matrix matrix is 1.
+
+
+2. What will be the output of the following Python code?
+
+matrix = [[[k for k in range(3)] for j in range(3)] for i in range(3)]
+print(matrix[1][2])
+solution
+
+The provided Python code uses nested list comprehensions to create a
+ 3x3x3 three-dimensional matrix named matrix and then prints a specific 
+element from that matrix. Here's how it works step by step:
+
+    The innermost list comprehension [k for k in range(3)] generates a list
+ [0, 1, 2]. This represents a row within a 2D matrix where the elements are 
+the numbers from 0 to 2.
+
+    The middle list comprehension [k for k in range(3)] is nested within another 
+list comprehension [... for j in range(3)]. This middle comprehension iterates 
+over the range of numbers from 0 to 2, creating three rows (since it runs three times).
+ This represents one layer of the 3D matrix.
+
+    The outermost list comprehension [k for k in range(3)] is nested within yet
+ another list comprehension [... for i in range(3)]. This outermost comprehension
+ iterates over the range of numbers from 0 to 2, creating three layers of 2D matrices
+ (since it runs three times). This represents the entire 3D matrix.
+
+    As a result of the nested comprehensions, matrix is created as a 3x3x3
+ three-dimensional matrix, where each element is a number from 0 to 2, representing 
+rows within rows within rows.
+
+    Finally, the code accesses the element at position (1, 2) within the 3D matrix using matrix[1][2].
+
+    matrix[1] refers to the second layer of the matrix (remember that indexing is 0-based), 
+which is a 2D matrix:
+
+    lua
+
+[[0, 1, 2],
+ [0, 1, 2],
+ [0, 1, 2]]
+
+matrix[1][2] then refers to the third row within that 2D matrix:
+
+csharp
+
+    [0, 1, 2]
+
+So, the output of the code will be:
+
+csharp
+
+[0, 1, 2]
+
+It prints the entire third row of the second
+
+3. Choose the correct code to get the third element in the second row, 
+Regarding the following list :
+
+Colors = [ ['Red', 'Green', 'White', 'Black'], ['Green', 'Blue', 'White', 'Yellow']
+ ,['White', 'Blue', 'Green', 'Red'] ]
+ solution
+
+To access the third element in the second row of the given list Colors, 
+you would use the following code:
+
+python
+
+Colors[1][2]
+
+Here's an explanation of this code:
+
+    Colors[1] refers to the second row of the list Colors. Remember that
+ indexing is 0-based, so the second row corresponds to the index 1.
+
+    Colors[1][2] then accesses the third element within the second row. 
+The inner index [2] corresponds to the third element (index 2) within the second row (index 1).
+
+So, Colors[1][2] will give you the third element in the second row, which is 'White'.
+
+5. To access the third element in the second row of the given list Colors, you would use the following code:
+
+python
+
+Colors[1][2]
+
+Here's an explanation of this code:
+
+    Colors[1] refers to the second row of the list Colors. Remember that 
+indexing is 0-based, so the second row corresponds to the index 1.
+
+    Colors[1][2] then accesses the third element within the second row. The
+ inner index [2] corresponds to the third element (index 2) within the second row (index 1).
+
+So, Colors[1][2] will give you the third element in the second row, which is 'White'.
+
+
+6. What will be the output of the following Python code?
+
+matrix = [[[k for k in range(3)] for j in range(3)] for i in range(3)]
+print(matrix[2][1])
+solution
+
+The provided Python code uses nested list comprehensions to create a 3x3x3 
+three-dimensional matrix named matrix and then prints a specific element from 
+that matrix. Here's how it works step by step:
+
+    The innermost list comprehension [k for k in range(3)] generates a list [0, 1, 2]. 
+This represents a row within a 2D matrix where the elements are the numbers from 0 to 2.
+
+    The middle list comprehension [k for k in range(3)] is nested within another 
+list comprehension [... for j in range(3)]. This middle comprehension iterates over 
+the range of numbers from 0 to 2, creating three rows (since it runs three times).
+ This represents one layer of the 3D matrix.
+
+    The outermost list comprehension [k for k in range(3)] is nested within yet another 
+list comprehension [... for i in range(3)]. This outermost comprehension iterates over 
+the range of numbers from 0 to 2, creating three layers of 2D matrices (since it runs three times). 
+This represents the entire 3D matrix.
+
+    As a result of the nested comprehensions, matrix is created as a 3x3x3 three-dimensional
+ matrix, where each element is a number from 0 to 2, representing rows within rows within rows.
+
+    Finally, the code accesses the element at position (2, 1) within the 3D matrix using matrix[2][1].
+
+    matrix[2] refers to the third layer of the matrix 
+(remember that indexing is 0-based), which is a 2D matrix:
+
+    lua
+
+[[0, 1, 2],
+ [0, 1, 2],
+ [0, 1, 2]]
+
+matrix[2][1] then refers to the second row within that 2D matrix:
+
+csharp
+
+    [0, 1, 2]
+
+So, the output of the code will be:
+
+csharp
+
+[0, 1, 2]
+
+It prints the entire second row of the third layer of the 3D matrix matrix.
+
+7. What will be the output of the following Python code?
+
+matrix = [[[0, 1, 2], [0, 1, 2], [0, 1, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]]]
+
+matrix2 = []
+
+for submatrix in matrix:
+  for val in submatrix:
+    matrix2.append(val)
+
+print(matrix2[2][0])
+
+The provided Python code starts with a 3x3x3 three-dimensional matrix
+ matrix and creates a flattened list matrix2 by extracting all the elements 
+from the submatrices within matrix. Afterward, it attempts to access an element
+ within the flattened list using indices [2][0].
+
+Let's break down the code step by step:
+
+    matrix is defined as a 3x3x3 three-dimensional matrix, where each element
+ is a submatrix consisting of rows and columns containing numbers from 0 to 2:
+
+    lua
+
+    [[[0, 1, 2], [0, 1, 2], [0, 1, 2]],
+     [[0, 1, 2], [0, 1, 2], [0, 1, 2]],
+     [[0, 1, 2], [0, 1, 2], [0, 1, 2]]]
+
+    An empty list matrix2 is initialized.
+
+    The code uses nested for loops to iterate over each submatrix within 
+the matrix and then over each value within those submatrices.
+
+    The innermost loop appends each value to the matrix2 list. This effectively
+ flattens the original 3D matrix into a one-dimensional list.
+
+    After the loops, matrix2 will contain all the individual values from the 
+original 3D matrix.
+
+    Finally, the code attempts to access the element at indices [2][0] within matrix2.
+
+However, there's an issue with the code when it tries to access an element 
+using two indices [2][0]. The list matrix2 is one-dimensional, so trying to 
+access an element with two indices like [2][0] will result in a TypeError
+ because it's treated as if you're trying to access a list of lists, which is not the case.
+
+To access elements in matrix2, you would only use one index. For example, to
+ access the third element, you can use matrix2[2]. So, the code should be modified
+ to access individual elements in matrix2 correctly.
+
+If you intended to access elements within the original 3D matrix matrix, you
+ would use three indices to access a specific element within the submatrices, 
+like matrix[2][0][0].
+
+8. What will be the output of the following Python code?
+
+matrix = [[[k for k in range(3)] for j in range(3)] for i in range(3)]
+print(matrix[0][0][1])
+ solution
+This Python code creates a 3-dimensional list (a list of lists of lists) 
+called matrix. Let's break down the code step by step and then explain the output:
+
+python
+
+matrix = [[[k for k in range(3)] for j in range(3)] for i in range(3)]
+
+Here's what's happening:
+
+    The outermost list comprehension [...] is executed three times because of 
+the for i in range(3) loop. So, it creates three separate lists.
+
+    Inside each of these outer lists, there's another list comprehension 
+[k for k in range(3)] which generates a list [0, 1, 2]. This inner list
+ comprehension is executed three times because of the for j in range(3)
+ loop. So, it creates three copies of [0, 1, 2] within each outer list.
+
+    This process repeats one more time, as there's another outer list
+ comprehension [...] executed three times because of the for i in range(3) loop. 
+Each time it executes, it creates a copy of the inner lists generated in step 2.
+
+So, the resulting matrix is a 3x3x3 3-dimensional list, and it looks like this:
+
+csharp
+
+[
+  [
+    [0, 1, 2],
+    [0, 1, 2],
+    [0, 1, 2]
+  ],
+  [
+    [0, 1, 2],
+    [0, 1, 2],
+    [0, 1, 2]
+  ],
+  [
+    [0, 1, 2],
+    [0, 1, 2],
+    [0, 1, 2]
+  ]
+]
+
+Now, let's print an element from this matrix:
+
+python
+
+print(matrix[0][0][1])
+
+Here, matrix[0] selects the first element of the outermost list, which is:
+
+csharp
+
+[
+  [0, 1, 2],
+  [0, 1, 2],
+  [0, 1, 2]
+]
+
+Then, matrix[0][0] selects the first element from this inner list, which is [0, 1, 2].
+
+Finally, matrix[0][0][1] selects the second element from this innermost list, which is 1.
+
+So, the output of the code is 1.
+
+9. This Python code creates a 3-dimensional list (a list of lists of lists) 
+called matrix. Let's break down the code step by step and then explain the output:
+
+python
+
+matrix = [[[k for k in range(3)] for j in range(3)] for i in range(3)]
+
+Here's what's happening:
+
+    The outermost list comprehension [...] is executed three times
+ because of the for i in range(3) loop. So, it creates three separate lists.
+
+    Inside each of these outer lists, there's another list comprehension 
+[k for k in range(3)] which generates a list [0, 1, 2]. This inner list
+ comprehension is executed three times because of the for j in range(3)
+ loop. So, it creates three copies of [0, 1, 2] within each outer list.
+
+    This process repeats one more time, as there's another outer list comprehension
+ [...] executed three times because of the for i in range(3) loop. Each time it 
+executes, it creates a copy of the inner lists generated in step 2.
+
+So, the resulting matrix is a 3x3x3 3-dimensional list, and it looks like this:
+
+csharp
+
+[
+  [
+    [0, 1, 2],
+    [0, 1, 2],
+    [0, 1, 2]
+  ],
+  [
+    [0, 1, 2],
+    [0, 1, 2],
+    [0, 1, 2]
+  ],
+  [
+    [0, 1, 2],
+    [0, 1, 2],
+    [0, 1, 2]
+  ]
+]
+
+Now, let's print an element from this matrix:
+
+python
+
+print(matrix[0][0][1])
+
+Here, matrix[0] selects the first element of the outermost list, which is:
+
+csharp
+
+[
+  [0, 1, 2],
+  [0, 1, 2],
+  [0, 1, 2]
+]
+
+Then, matrix[0][0] selects the first element from this inner list, which is [0, 1, 2].
+
+Finally, matrix[0][0][1] selects the second element from this innermost list, which is 1.
+
+So, the output of the code is 1.
+
+10. To retrieve the "Red" color from the given list, you need to access the 
+element inside the third sublist (index 2), inside the second sublist (index 1),
+ and then the third element (index 2) within that sublist. Here's how you can do it:
+
+python
+
+Colors = [
+    [['Blue', 'Green', 'White', 'Black']],
+    [['Green', 'Blue', 'White', 'Yellow']],
+    [['White', 'Blue', 'Red', 'Green']]
+]
+
+color = Colors[2][1][2]
+print(color)
+
+Explanation:
+
+    Colors[2] selects the third sublist within the outer list.
+ This sublist is [['White', 'Blue', 'Red', 'Green']].
+
+    Colors[2][1] selects the second sublist within the previously 
+selected sublist. This sublist is ['Green', 'Blue', 'White', 'Yellow'].
+
+    Colors[2][1][2] selects the third element within the second sublist, which is 'Red'.
+
+So, the correct answer is to use Colors[2][1][2], and it will output "Red".
+
+11. What will be the output of the following Python code?
+
+matrix = [[[0, 1, 2], [0, 1, 2], [0, 1, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]]]
+print(matrix[0][0][0])
+
+solution
+This Python code defines a 3-dimensional list called matrix, 
+which is essentially a 3x3x3 cube of numbers. Let's break down
+ the code step by step and explain the output:
+
+python
+
+matrix = [[[0, 1, 2], [0, 1, 2], [0, 1, 2]],
+          [[0, 1, 2], [0, 1, 2], [0, 1, 2]],
+          [[0, 1, 2], [0, 1, 2], [0, 1, 2]]]
+
+This code initializes matrix with three nested lists, each representing a 3x3 grid of numbers.
+
+Now, let's print an element from this matrix:
+
+python
+
+print(matrix[0][0][0])
+
+Here, matrix[0] selects the first element of the outermost list, which is:
+
+csharp
+
+[
+  [0, 1, 2],
+  [0, 1, 2],
+  [0, 1, 2]
+]
+
+Then, matrix[0][0] selects the first element from this inner list, which is [0, 1, 2].
+
+Finally, matrix[0][0][0] selects the first element from this innermost list, which is 0.
+
+So, the output of the code is 0.
+
+
+12. What will be the output of the following Python code?
+
+matrix = [[[0, 1, 2], [0, 1, 2], [0, 1, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]]]
+
+matrix2 = []
+
+for submatrix in matrix:
+  for val in submatrix:
+    matrix2.append(val)
+
+print(matrix2[2][2])
+
+solution
+
+The provided Python code creates two lists, matrix and matrix2, 
+and then attempts to access an element from matrix2. However, there's 
+an issue with the code that will result in an error. Let's break down
+ the code and explain what's happening:
+
+python
+
+matrix = [[[0, 1, 2], [0, 1, 2], [0, 1, 2]],
+          [[0, 1, 2], [0, 1, 2], [0, 1, 2]],
+          [[0, 1, 2], [0, 1, 2], [0, 1, 2]]]
+
+This initializes matrix with a 3x3x3 cube of numbers, similar to the previous example.
+
+Now, let's look at the second part of the code:
+
+python
+
+matrix2 = []
+
+for submatrix in matrix:
+  for val in submatrix:
+    matrix2.append(val)
+
+In this code, matrix2 is created as an empty list. Then, it iterates 
+over the elements in matrix. It flattens the nested structure of matrix by 
+appending each individual value (number) to matrix2. So, matrix2 will contain 
+a flat list of all the numbers in matrix.
+
+However, there's an issue with the line:
+
+python
+
+print(matrix2[2][2])
+
+At this point, matrix2 is a flat list of numbers, and you are trying to access
+ an element as if it were a 2D list. This will result in an "IndexError" because
+ you can't access elements as if matrix2 were a 2D list with two indices.
+
+If you want to access the third element (index 2) of the flattened matrix2, you can simply do:
+
+python
+
+print(matrix2[2])
+
+This will correctly print the third element of the flattened list, which is 2.
+
+13. What will be the output of the following Python code?
+
+matrix = [[[0, 1, 2], [0, 1, 2], [0, 1, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]], [[0, 1, 2], [0, 1, 2], [0, 1, 2]]]
+
+matrix2 = []
+
+for submatrix in matrix:
+  for val in submatrix:
+    matrix2.append(val)
+
+print(matrix2[2])
