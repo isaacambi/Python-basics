@@ -1,0 +1,408 @@
+TIONS
+1. Define a function that gets the user input and multiply it by a number we passed to the function.
+
+Sample input:  6
+Sample output: 
+
+print( multi_num(5) )
+30
+Certainly! Here's a Python function that takes user input and multiplies
+ it by a number passed as an argument to the function:
+
+python
+
+def multi_num(factor):
+    user_input = input("Enter a number: ")
+    try:
+        user_input = float(user_input)  # Convert the user input to a floating-point number
+        result = user_input * factor    # Multiply the user input by the factor
+        return result
+    except ValueError:
+        return "Invalid input. Please enter a valid number."
+
+# Example usage:
+factor = 5
+output = multi_num(factor)
+print(output)
+
+Let's break down how this code works:
+
+    We define a function called multi_num that takes one argument,
+ factor, which is the number you want to multiply the user's input by.
+
+    Inside the function, we use the input function to get user input, 
+and we prompt the user to enter a number.
+
+    We then use a try block to handle any potential errors. We attempt 
+to convert the user input to a floating-point number using float(user_input). 
+If the user enters something that cannot be converted to a number
+ (e.g., letters or symbols), a ValueError exception will be raised, and we'll 
+handle it in the except block.
+
+    If the conversion is successful, we multiply the user input by the factor 
+and store the result in the result variable.
+
+    Finally, we return the result as the output of the function.
+
+    In the example usage at the bottom, we set factor to 5 and call the 
+multi_num function with this factor. The function will prompt the user to
+ enter a number, and it will then multiply that number by 5 (the factor).
+ The result is printed to the console.
+
+So, if you run this code and enter "6" as the user input, it will calculate
+ 6 * 5 and print the result, which is 30.
+
+2. Choose the correct answer which defines a function to get numeric input from the user:
+def input_num(): return int(input())
+
+3. What is the output of the following snippet:
+
+def my_function(*students):
+  print("The tallest student is " + students[2])
+
+my_function("James", "Ella", "Jackson")
+ solution
+The provided code defines a Python function called my_function that 
+takes a variable number of arguments (students' names) and attempts to print
+ the name of the third student. Here's the code with a step-by-step explanation:
+
+python
+
+def my_function(*students):
+    print("The tallest student is " + students[2])
+
+my_function("James", "Ella", "Jackson")
+
+    We define a function named my_function that accepts a variable number
+ of arguments, denoted by *students. This means you can pass any number of 
+arguments when calling the function, and they will be collected into a tuple 
+called students.
+
+    Inside the function, we attempt to print a message that includes the name
+ of the third student from the students tuple. The indexing [2] is used to access 
+the third element because indexing in Python starts at 0. So, students[2] refers to the third student.
+
+    Finally, we call my_function with three arguments: "James," "Ella," and "Jackson."
+
+Now, let's see what happens when we run this code:
+
+    The function my_function is called with three arguments: "James," "Ella," and "Jackson."
+
+    Inside the function, these arguments are collected into a tuple named students.
+ So, students will be ("James", "Ella", "Jackson").
+
+    The function attempts to print "The tallest student is " concatenated with the 
+name of the third student, which is students[2]. In this case, students[2] refers to "Jackson."
+
+    Therefore, the output of the code will be:
+
+    csharp
+
+    The tallest student is Jackson
+
+So, the code will print "The tallest student is Jackson" to the console.
+
+4. What will be the result of calling the print_info function with the arguments ‘john’ and 19?
+
+def print_info(name, age=18):
+    print(name, age)
+
+print_info('john', 19)
+ solution
+
+In this code, you have a function called print_info that takes two parameters: name and age. 
+The age parameter has a default value of 18. Let's break down the code and explain it step by step:
+
+python
+
+def print_info(name, age=18):
+    print(name, age)
+
+print_info('john', 19)
+
+    You define a function print_info that takes two parameters: name and age. 
+name is a required parameter, while age is an optional parameter with a default value of 18.
+
+    You call the print_info function with the arguments 'john' and 19. This means
+ you are explicitly passing values for both name and age.
+
+    Inside the function, the print function is used to print the values of name and age.
+
+    In this specific function call, 'john' is passed as the value for name, and 19 
+is passed as the value for age.
+
+    Since you provided a value for age when calling the function, it overrides the
+ default value of 18. Therefore, when the function is called with 'john' and 19,
+ it prints those values:
+
+    john 19
+
+So, the output of the code will be john 19, as it prints both the provided name 
+('john') and the explicitly provided age (19).
+
+5. Regarding the definition of the function and the sample input, 
+Choose the correct value of the output.
+
+Function :  def multi_func(num1,num2):
+                      return num1 *num2 
+Sample input: print ( multi_func(5 , num1= 10) )
+
+solution
+The code you've provided defines a Python function called multi_func 
+that takes two parameters, num1 and num2, and returns their product 
+(num1 * num2). It also attempts to call this function with arguments
+ and keyword arguments. Let's break it down and explain it:
+
+python
+
+def multi_func(num1, num2):
+    return num1 * num2
+
+# Attempt to call the function with arguments and keyword arguments
+result = multi_func(5, num1=10)
+print(result)
+
+    You define a function called multi_func that takes two parameters, num1 and num2. 
+Inside the function, it calculates the product of these two parameters (num1 * num2) 
+and returns the result.
+
+    You then attempt to call the multi_func function with the following arguments 
+and keyword argument:
+        5 is passed as the first positional argument, which corresponds to num1.
+        num1=10 is passed as a keyword argument. In this case, you're explicitly 
+specifying that num1 should have a value of 10.
+
+    The function multi_func doesn't use the keyword argument num1 because num1 is
+ already defined as a positional argument. The positional argument takes precedence 
+over the keyword argument.
+
+    So, when the function is called, it effectively becomes multi_func(5, 10),
+ where 5 is assigned to num1 as a positional argument, and 10 is assigned to num2
+ as a positional argument.
+
+    The function calculates 5 * 10 and returns 50.
+
+    The result (50) is stored in the result variable, and then it is printed to 
+the console using print(result).
+
+So, the correct value of the output is 50. The code will print 50 to the console.
+
+6. The function can have only one parameter. If any data (parameters) are passed, they are passed explicitly.
+Ans= False
+
+7. Method is called by its name, but it is associated with an object.
+Ans = True
+
+8. The output of the following snippet of the code will be:
+
+a = 0
+def add_one(a):
+	return a+1
+
+result = add_one(a)
+print(result)
+Ans = 1
+
+9. What is the error in the following snippet code:
+
+def multi_func():
+  result = int(input()) * 5
+  return result     
+
+print(result)
+
+solution
+
+In the provided code snippet, there is an error in the print statement because 
+it attempts to print a variable result that is defined within the scope of the 
+multi_func function. The result variable is not accessible outside the function. 
+To fix this error, you can modify the code as follows:
+
+python
+
+def multi_func():
+    result = int(input()) * 5
+    return result
+
+# Call the function and store its result in a variable
+result_value = multi_func()
+
+# Print the result
+print(result_value)
+
+Here's what I changed and why:
+
+    I modified the print(result) statement to print(result_value). This 
+change ensures that we are printing the result of the multi_func function, 
+which is stored in the result_value variable.
+
+    After defining the multi_func function, I called the function and stored
+ its result in the result_value variable by assigning result_value = multi_func(). 
+This way, we capture the result of the function call.
+
+    Finally, I added a print(result_value) statement to print the result stored
+ in result_value to the console.
+
+With these changes, the code will correctly take user input, multiply it by 5,
+ and print the result.
+
+The result is not provided as a global variable.
+
+ARGUMENTS
+1. The output of the following snippet of the code will be:
+
+def print_name_age(name, age=19):
+    print(name, age)
+
+print_name_age('john', 18)
+solution
+The provided code defines a Python function called print_name_age that takes two 
+parameters: name and age. The age parameter has a default value of 19. Then, the 
+code calls this function with specific arguments. Let's break it down and explain the code step by step:
+
+python
+
+def print_name_age(name, age=19):
+    print(name, age)
+
+print_name_age('john', 18)
+
+    You define a function called print_name_age that takes two parameters, 
+name and age. The age parameter has a default value of 19.
+
+    You call the print_name_age function with the arguments 'john' and 18.
+ When you call a function with specific arguments, those arguments override 
+any default values for the parameters.
+
+    Inside the function, the print function is used to print the values of name and age.
+
+    In this specific function call, 'john' is passed as the value for name, 
+and 18 is passed as the value for age. These values are used when the function is executed.
+
+    Therefore, when the function is called with 'john' and 18, it prints those values:
+
+    john 18
+
+So, the output of the code will be john 18, as it prints both the provided name
+ ('john') and the provided age (18). The default value of 19 for age is not used
+ in this specific function call because you explicitly passed an age value of 18.
+
+
+2. The output of the following snippet of the code will be:
+
+def print_name_age(name, age=19):
+    print(name, age)
+
+print_name_age('john', 18)
+
+Ans = John 18
+
+3. Regarding the definition of the function and the sample input, Choose the correct value of the output.
+
+Function :  def add_func(num1,num2):
+            	  	return num1 + num2 
+		
+Sample input: print ( add_func(5 , 5) )
+Ans = 10
+
+4. Regarding the definition of the function and the sample input, 
+Choose the correct value of the output.
+
+Function :  def add_func(num1,num2):
+                   	return num1 + num2
+ 
+Sample input: print ( add_func(5 , num1= 10) ) 
+
+Ans = Error
+
+5. The output of the following snippet of the code will be:
+
+nums= [7,4,1]
+def change_third_item(list):
+	list[2] = 5
+
+change_third_item(nums)
+print(nums)
+ solution
+[7,4,5]
+
+6. What will be the result of calling the fullname_func function with the argument ‘John’?
+
+def fullname_func(fname):
+  print(fname + " Mark")
+
+fullname_func("John")
+
+Ans = John Mark
+
+7. The output of the following snippet of the code will be:
+
+a = 0
+def add_three(a):
+	return a+3
+
+result = add_three(a)
+print(result)
+
+Ans = 3
+
+8. The provided code defines a global variable a with a value of 0, and it also defines a function called add_three that takes a parameter a. The function adds 3 to the parameter a and returns the result. Then, it calls this function with the argument 3 and assigns the result to the variable result. Finally, it prints the value of result. Let's break it down and explain the code step by step:
+
+python
+
+a = 0  # Global variable 'a' with a value of 0
+
+def add_three(a):
+    return a + 3  # This function adds 3 to the parameter 'a' and returns the result
+
+result = add_three(3)  # Call the 'add_three' function with the argument '3' 
+and assign the result to 'result'
+
+print(result)  # Print the value of 'result'
+
+    You define a global variable a with a value of 0.
+
+    You define a function called add_three that takes a parameter a. Inside the
+ function, it adds 3 to the parameter a and returns the result.
+
+    You call the add_three function with the argument 3. This means you're passing
+ the value 3 as the parameter a when calling the function.
+
+    Inside the function call, a takes on the value of 3, and the function adds 3 
+to it. So, the result is 3 + 3, which equals 6.
+
+    The result of the function call, 6, is assigned to the variable result.
+
+    Finally, you print the value of result, which is 6.
+
+So, the output of the code will be 6, as it prints the result of adding 3 to the value 
+passed as an argument to the add_three function.
+
+9. Define a function that gets the user input and add to it a number we passed to the function.
+
+Sample input:  6
+Sample output: 
+print( add_num(5) )
+11
+Ans = def add_num(num): return int(input()) + num
+
+10. What will be the result of calling the fullname_func function with the arguments ‘John’ and ‘Mark’?
+
+def fullname_func(fname, lname):
+  print(fname + " " + lname)
+
+fullname_func("John", "Mark")
+
+John Mark
+
+11. What is the output of the following snippet:
+
+def my_function(*friends):
+  print("The tallest student is " + friends[0])
+
+my_function("john", "Ella", "mark")
+
+solution
+The tallest student is john
+
+
